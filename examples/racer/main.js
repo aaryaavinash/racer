@@ -1,8 +1,10 @@
+import './tailwind.css';
 import { Engine, THREE, normalize, prepModel, damp, clamp, smooth, lerp, studioEnvironment } from '../../src/core/engine.js';
 import { Assets } from '../../src/core/assets.js';
 import { Pointer } from '../../src/core/input.js';
 import { smoothScroll, gsap, reveal } from '../../src/core/scroll.js';
-import { preloader, cursor, magnetic, worldNav } from '../../src/core/ui.js';
+// ORIGINAL (preserved, not deleted — disabled by comment): import { preloader, cursor, magnetic, worldNav } from '../../src/core/ui.js';
+import { preloader, cursor, magnetic } from '../../src/core/ui.js';
 import { PlanarReflection } from '../../src/core/reflector.js';
 import { VolumetricSpotEffect } from '../../src/core/volumetric.js';
 import { bakeTexture } from '../../src/core/textures.js';
@@ -799,7 +801,7 @@ form.addEventListener('submit', e => {
 });
 
 // ─── Boot ─────────────────────────────────────────────────────────────────────
-worldNav('racer', { theme: 'dark', corner: 'bl' });
+// ORIGINAL (preserved, not deleted — disabled by comment): worldNav('racer', { theme: 'dark', corner: 'bl' });
 cursorApi = cursor({ color: '#ffd7df', blend: 'normal', size: 34 });
 magnetic();
 smoothScroll({ lerp: 0.08 });
