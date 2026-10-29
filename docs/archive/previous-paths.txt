@@ -1,0 +1,19 @@
+// ORIGINAL (preserved, not deleted — disabled by comment): previous nested paths
+// import { Engine, THREE, normalize, prepModel, damp, clamp, smooth, lerp, studioEnvironment } from '../../src/core/engine.js';
+// import { Assets } from '../../src/core/assets.js';
+// import { Pointer } from '../../src/core/input.js';
+// import { smoothScroll, gsap, reveal } from '../../src/core/scroll.js';
+// // ORIGINAL (preserved, not deleted — disabled by comment): import { preloader, cursor, magnetic, worldNav } from '../../src/core/ui.js';
+// import { preloader, cursor, magnetic } from '../../src/core/ui.js';
+// import { PlanarReflection } from '../../src/core/reflector.js';
+// import { VolumetricSpotEffect } from '../../src/core/volumetric.js';
+// import { bakeTexture } from '../../src/core/textures.js';
+//   assets.texture('img/racer/asphalt.webp'), assets.texture('img/racer/brick.webp'), assets.texture('img/racer/shutter.webp'),
+//   assets.texture('img/racer/workshop.webp'), assets.texture('img/racer/city.webp'),
+// const modelP = Promise.all([assets.gltf('models/racer/bike.glb'), assets.gltf('models/racer/helmet.glb')]);
+// // ORIGINAL (preserved, not deleted — disabled by comment): worldNav('racer', { theme: 'dark', corner: 'bl' });
+// import { THREE } from '../../src/core/engine.js';
+//   <link rel="stylesheet" href="./examples/racer/style.css">
+//   <script type="module" src="./examples/racer/main.js"></script>
+// // ORIGINAL (preserved, not deleted — disabled by comment): import { preloader, cursor, magnetic, worldNav } from './core/ui.js';
+// // ORIGINAL (preserved, not deleted — disabled by comment): worldNav('racer', { theme: 'dark', corner: 'bl' });

@@ -1,7 +1,7 @@
 {
   "name": "racer",
   "private": true,
-  "description": "Standalone Nightshift Motor Co. world from Dioramas.",
+  "description": "A hand-built caf\u00e9-racer concept from a Rotterdam garage that opens after dark.",
   "license": "MIT",
   "version": "0.1.0",
   "type": "module",

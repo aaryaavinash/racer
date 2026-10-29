@@ -1,8 +1,8 @@
-# 19 · Nightshift Motor Co. — "Rev a café racer in the rain"
+# Nightshift Motor Co. — "Rev a café racer in the rain"
 Brand: **Nightshift Motor Co.** — a custom motorcycle workshop building 12 café racers a year.
 
 ## Signature interaction
-Midnight, rain, the bike (`models/racer/bike.glb`) under a flickering neon sign on wet asphalt (PlanarReflection with rain-ripple
+Midnight, rain, the bike (`models/bike.glb`) under a flickering neon sign on wet asphalt (PlanarReflection with rain-ripple
 normal distortion; puddles). **Hold to rev**: hold mouse/space → RPM climbs on a big tachometer, WebAudio engine (twin-cylinder:
 pulse/saw oscillators at firing frequency + noise + distortion + low-pass tied to RPM; optional, mute toggle), the bike vibrates,
 exhaust heat haze (screen-space refraction), the headlight snaps on with a volumetric beam through the rain, neon buzzes brighter,

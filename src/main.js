@@ -1,13 +1,12 @@
 import './tailwind.css';
-import { Engine, THREE, normalize, prepModel, damp, clamp, smooth, lerp, studioEnvironment } from '../../src/core/engine.js';
-import { Assets } from '../../src/core/assets.js';
-import { Pointer } from '../../src/core/input.js';
-import { smoothScroll, gsap, reveal } from '../../src/core/scroll.js';
-// ORIGINAL (preserved, not deleted — disabled by comment): import { preloader, cursor, magnetic, worldNav } from '../../src/core/ui.js';
-import { preloader, cursor, magnetic } from '../../src/core/ui.js';
-import { PlanarReflection } from '../../src/core/reflector.js';
-import { VolumetricSpotEffect } from '../../src/core/volumetric.js';
-import { bakeTexture } from '../../src/core/textures.js';
+import { Engine, THREE, normalize, prepModel, damp, clamp, smooth, lerp, studioEnvironment } from './core/engine.js';
+import { Assets } from './core/assets.js';
+import { Pointer } from './core/input.js';
+import { smoothScroll, gsap, reveal } from './core/scroll.js';
+import { preloader, cursor, magnetic } from './core/ui.js';
+import { PlanarReflection } from './core/reflector.js';
+import { VolumetricSpotEffect } from './core/volumetric.js';
+import { bakeTexture } from './core/textures.js';
 import { RectAreaLightUniformsLib } from 'three/examples/jsm/lights/RectAreaLightUniformsLib.js';
 import { RoundedBoxGeometry } from 'three/examples/jsm/geometries/RoundedBoxGeometry.js';
 import { DepthOfFieldEffect, BloomEffect, HueSaturationEffect } from 'postprocessing';
@@ -117,14 +116,14 @@ const loader = preloader({
 // ─── Textures ──────────────────────────────────────────────────────────────────
 const shared = { uTime: { value: 0 } };
 const texP = Promise.all([
-  assets.texture('img/racer/asphalt.webp'), assets.texture('img/racer/brick.webp'), assets.texture('img/racer/shutter.webp'),
-  assets.texture('img/racer/workshop.webp'), assets.texture('img/racer/city.webp'),
+  assets.texture('img/asphalt.webp'), assets.texture('img/brick.webp'), assets.texture('img/shutter.webp'),
+  assets.texture('img/workshop.webp'), assets.texture('img/city.webp'),
 ]);
 const fontP = Promise.race([
   Promise.all([document.fonts.load('300px Neonderthaw'), document.fonts.load('500 60px Inter'), document.fonts.load('40px Anton')]),
   new Promise(r => setTimeout(r, 4000)),
 ]);
-const modelP = Promise.all([assets.gltf('models/racer/bike.glb'), assets.gltf('models/racer/helmet.glb')]);
+const modelP = Promise.all([assets.gltf('models/bike.glb'), assets.gltf('models/helmet.glb')]);
 
 /** Height-from-luminance normal map + roughness, baked on the GPU from a photo texture. */
 function derive(src, { size = 1024, strength = 3, rough = '0.5' } = {}) {
@@ -801,7 +800,6 @@ form.addEventListener('submit', e => {
 });
 
 // ─── Boot ─────────────────────────────────────────────────────────────────────
-// ORIGINAL (preserved, not deleted — disabled by comment): worldNav('racer', { theme: 'dark', corner: 'bl' });
 cursorApi = cursor({ color: '#ffd7df', blend: 'normal', size: 34 });
 magnetic();
 smoothScroll({ lerp: 0.08 });

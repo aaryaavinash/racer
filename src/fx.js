@@ -1,5 +1,5 @@
 // Nightshift — page-local rendering pieces: wet asphalt, rain, splashes, heat haze, neon, wet paint.
-import { THREE } from '../../src/core/engine.js';
+import { THREE } from './core/engine.js';
 import { Effect } from 'postprocessing';
 
 // ─── Shared GLSL ──────────────────────────────────────────────────────────────
